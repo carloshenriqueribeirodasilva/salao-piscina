@@ -64,11 +64,26 @@
       text-indent: 20px;
       letter-spacing: 2px;
       font-family: 'Dosis', sans-serif;
-    }
+    } 
 
     button {
       margin-bottom: 20px;
-      
+    }
+
+    .pulse-button {
+      animation: pulse 1s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
 
     .img-fluid {
@@ -97,6 +112,7 @@
       text-indent: 20px;
       margin: 20px;
       letter-spacing: 2px;
+      font-family: 'Dosis', sans-serif;
     }
     
     footer {
@@ -205,7 +221,7 @@
 
                   <!-- Botão -->
       <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">
+        <button class="btn btn-primary pulse-button" type="button">
           <a href="#">Reserve agora</a>
         </button>
       </div>
@@ -226,7 +242,7 @@
 
       <!-- mapa -->
 
-      <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2941859543266!2d-46.29010029077616!3d-23.485910978763517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7bdfb7f5c0cd%3A0x8a4303406cda9bc6!2sR.%20T%C3%A2nia%2C%20180%20-%20Jardim%20Margarida%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008772-160!5e0!3m2!1spt-BR!2sbr!4v1688243150128!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></div>
+      <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.2941859543266!2d-46.29010029077616!3d-23.485910978763517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7bdfb7f5c0cd%3A0x8a4303406cda9bc6!2sR.%20T%C3%A2nia%2C%20180%20-%20Jardim%20Margarida%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008772-160!5e0!3m2!1spt-BR!2sbr!4v1688243150128!5m2!1spt-BR!2sbr" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></div>
 
      
 
@@ -242,7 +258,7 @@
         </div>
         <div class="col">
           <a href="https://www.instagram.com/eu.carloshenrique/?hl=pt-br" class="a.footer" target="_blank">
-            <p>Site criado pro Carlos Henrique</p>
+            <p>Site criado por Carlos Henrique</p>
           </a>
         </div>
       </div>
